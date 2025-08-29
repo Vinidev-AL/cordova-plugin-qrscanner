@@ -34,16 +34,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/**
- * QRScanner Plugin for Cordova
- * 
- * This plugin uses the legacy Camera API (android.hardware.Camera) through
- * the ZXing library for QR code scanning. While this API is deprecated,
- * it's still supported and widely used in production apps.
- * 
- * The ZXing library handles camera compatibility across different Android versions.
- */
-@SuppressWarnings({"deprecation"})
+@SuppressWarnings("deprecation")
 public class QRScanner extends CordovaPlugin implements BarcodeCallback {
 
     private CallbackContext callbackContext;

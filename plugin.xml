@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin 
-  xmlns="http://www.phonegap.com/ns/plugins/1.0" id="cordova-plugin-qrscanner" version="3.1.0">
+  xmlns="http://www.phonegap.com/ns/plugins/1.0" id="cordova-plugin-qrscanner" version="3.0.1">
   <name>QRScanner</name>
   <engines>
-    <engine name="cordova" version=">=11.0.0"/>
-    <engine name="cordova-android" version=">=11.0.0"/>
-    <engine name="cordova-ios" version=">=6.0.0"/>
+    <engine name="cordova" version=">=3.4.0"/>
   </engines>
   <js-module src="www/www.min.js" name="QRScanner">
     <clobbers target="QRScanner" />
@@ -21,7 +19,6 @@
       <uses-feature android:name="android.hardware.camera" android:required="false" />
       <uses-feature android:name="android.hardware.camera.front" android:required="false" />
     </config-file>
-    <preference name="AndroidXEnabled" value="true" />
     <source-file src="src/android/QRScanner.java" target-dir="src/com/bitpay/cordova/qrscanner"/>
     <framework src="src/android/qrscanner.gradle" custom="true" type="gradleReference"/>
   </platform>
@@ -31,15 +28,11 @@
         <param name="ios-package" value="QRScanner"/>
       </feature>
     </config-file>
-    <dependency id="cordova-plugin-add-swift-support" spec="~2.0.2" />
+    <dependency id="cordova-plugin-add-swift-support" spec="~1.7.2" />
     <source-file src="src/ios/QRScanner.swift"/>
     <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
-      <string>This app needs camera access to scan QR codes.</string>
+      <string>The camera is used to scan QR codes.</string>
     </config-file>
-    <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
-      <string>This app may need photo library access to process QR codes from images.</string>
-    </config-file>
-    <preference name="deployment-target" default="12.0" />
   </platform>
   <platform name="browser">
     <config-file target="config.xml" parent="/*">
