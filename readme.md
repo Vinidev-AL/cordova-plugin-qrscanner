@@ -7,6 +7,29 @@ A fast, energy efficient, highly-configurable QR code scanner for Cordova apps �
 
 QRScanner's native camera preview is rendered behind the Cordova app's webview, and QRScanner provides `show` and `hide` methods to toggle the transparency of the webview's background. This allows for a completely HTML/CSS/JS interface to be built inside the webview to control the scanner.
 
+## 🚀 Modernização e Compatibilidade
+
+Este plugin foi atualizado para ser compatível com:
+- **Cordova**: ≥ 11.0.0
+- **Cordova Android**: ≥ 11.0.0  
+- **JDK**: 17+
+- **Gradle**: 7.6+
+- **Android SDK**: API 21-34 (Android 5.0 - Android 14)
+- **AndroidX**: Suporte completo
+
+### Principais Melhorias:
+- ✅ **AndroidX**: Migração completa do Android Support Library
+- ✅ **Gradle Moderno**: Uso de `implementation` em vez de `compile`
+- ✅ **Dependências Atualizadas**: ZXing 4.3.0, bibliotecas de segurança atualizadas
+- ✅ **SDK Moderno**: Compatível com Android 14 (API 34)
+- ✅ **Java 8+**: Suporte a recursos modernos do Java
+
+### 📋 Requisitos Mínimos:
+- Android: API 21+ (Android 5.0+)
+- iOS: 12.0+
+- Cordova CLI: 11.0.0+
+- Node.js: 16.0.0+
+
 ## Examples
 
 <!-- Does your project use cordova-plugin-qrscanner? We'd love to share a screenshot of your scanning interface! Please send a pull request adding your screenshot to the list below. -->

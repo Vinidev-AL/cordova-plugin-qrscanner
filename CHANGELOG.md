@@ -1,3 +1,36 @@
+<a name="3.1.0"></a>
+## [3.1.0](https://github.com/bitpay/cordova-plugin-qrscanner/compare/3.0.1...3.1.0) (2025-08-29)
+
+### BREAKING CHANGES
+
+* **Cordova:** minimum required version is now 11.0.0
+* **Android:** minimum API level is now 21 (Android 5.0)
+* **iOS:** minimum iOS version is now 12.0
+
+### Features
+
+* **Android:** complete migration to AndroidX from Android Support Library
+* **Android:** updated ZXing library to 4.3.0 for better performance and security
+* **Android:** updated to compile with SDK 34 (Android 14)
+* **Gradle:** migrated from `compile` to `implementation` syntax
+* **Dependencies:** updated all development dependencies to latest secure versions
+* **iOS:** updated Swift support dependency to 2.0.2
+* **iOS:** added photo library usage description for enhanced privacy compliance
+
+### Bug Fixes
+
+* **Gradle:** replaced deprecated `jcenter()` with `mavenCentral()`
+* **Android:** fixed compatibility issues with modern Android Studio and Gradle 7.6+
+* **Build:** resolved build issues with JDK 17
+* **Security:** updated all dependencies to versions without known vulnerabilities
+
+### Technical Improvements
+
+* **Java:** added Java 8 language features support
+* **Documentation:** comprehensive migration guide added (MIGRATION_GUIDE.md)
+* **Testing:** added automated test scripts for validation
+* **Code Quality:** improved code documentation and deprecation handling
+
 <a name="3.0.1"></a>
 ## [3.0.1](https://github.com/bitpay/cordova-plugin-qrscanner/compare/2.6.0...3.0.1) (2019-03-29)
 
